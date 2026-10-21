@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jarvis Steven J's student portfolio: skills, learning and selected projects.">
+  <title>Jarvis Steven J — Student Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Jarvis Steven J, home">Jarvis<span>.</span></a>
+    <button class="menu-toggle" hidden aria-controls="navigation" aria-expanded="false">Menu</button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#home" aria-current="location">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" hidden aria-pressed="false">Dark mode</button>
+  </header>
+  <main id="main">
+    <section id="home" class="hero section">
+      <div>
+        <p class="eyebrow">Student · Learner · Developer</p>
+        <h1>Hi, I’m<br>Jarvis<br>Steven J<span>.</span></h1>
+        <p class="hero-line">Learning by building.<br>Exploring what’s possible.</p>
+        <p class="intro">From web development to AI development, I’m developing my skills through new ideas, projects, and prototypes.</p>
+        <a class="button" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="portrait">
+        <img src="images/profile.png" alt="Jarvis Steven J" width="600" height="648">
+        <figcaption>Always a work in progress.<br><strong>Always learning.</strong></figcaption>
+      </figure>
+    </section>
+    <section id="about" class="section about reveal">
+      <div><p class="eyebrow">01 / A little about me</p><h2>Curiosity is<br>the starting point.</h2></div>
+      <div class="body-copy"><p>I’m Jarvis Steven J, a Computer Science student at KG College of Arts and Science with a strong interest in Artificial Intelligence, software development, and emerging technologies. I enjoy turning ideas into practical solutions by building projects that combine intelligent systems, software engineering, and real-world problem-solving.</p><p>Through projects like Oceantrace AI, VitalGuard, and REIM, I explore different areas of technology, from environmental intelligence and healthcare monitoring to AI-powered applications. I’m continuously learning, experimenting with new technologies, and improving my skills through hands-on projects and hackathons.</p><p class="note">This portfolio follows my learning journey, including research prototypes and ideas still taking shape.</p></div>
+    </section>
+    <section id="skills" class="section reveal">
+      <p class="eyebrow">02 / My toolkit</p><h2>Built on practice.<br>Open to learning.</h2>
+      <div class="skill-grid">
+        <div class="skill-group"><h3>Hands-on experience</h3><ul class="tags"><li>Python</li><li>JavaScript</li><li>React</li><li>Node.js</li><li>FastAPI</li></ul></div>
+        <div class="skill-group"><h3>Currently learning</h3><ul class="tags"><li>Flutter</li><li>Network Security</li><li>Penetration Testing</li></ul></div>
+      </div>
+    </section>
+    <section id="projects" class="section reveal">
+      <div class="section-heading"><div><p class="eyebrow">03 / Selected explorations</p><h2>Ideas in the making.</h2></div><p>Research. Prototypes. Possibilities.</p></div>
+      <div class="project-grid">
+        <article class="project ocean"><div class="project-art" aria-hidden="true"><span>01</span><div class="waves">≈</div><small>OCEANTRACE AI</small></div><div class="project-content"><p class="status">Research prototype</p><h3>Oceantrace AI</h3><p>An AI-assisted marine monitoring project focused on detecting potential oil spills using satellite imagery and investigating possible vessel involvement through AIS data.</p><details><summary>Project details</summary><div class="detail-copy"><p>Combines satellite-based oil spill detection, vessel tracking, ocean drift analysis, and spatial mapping to support marine pollution investigation. The intended goal is to help authorities identify potential spill sources and understand how pollution may spread.</p><dl><dt>Tools & skills</dt><dd>React, Vite, Leaflet, WebGL, Python, satellite imagery analysis, AIS data analysis, geospatial visualization, and drift modelling.</dd><dt>Contribution & learning</dt><dd>I contributed to frontend development, geospatial visualization, and integration with backend analysis modules. Through this work, I developed my understanding of satellite imagery, AIS vessel data, and drift modelling, including how these sources can support investigations into possible marine pollution.</dd><dt>Project access</dt><dd>Live Demo: <a href="https://oceantrace-research-demo.onrender.com/" target="_blank" rel="noopener noreferrer">Oceantrace-AI</a><br>GitHub: <a href="https://github.com/Jarvis-Steven/Oceantrace-AI" target="_blank" rel="noopener noreferrer">Oceantrace-AI Files</a></dd></dl></div></details></div></article>
+        <article class="project vital"><div class="project-art" aria-hidden="true"><span>02</span><div class="pulse">＋</div><small>VITALGUARD</small></div><div class="project-content"><p class="status">Prototype</p><h3>VitalGuard</h3><p>A healthcare monitoring web application concept designed to help hospital staff monitor patients and identify persistent abnormal health patterns.</p><details><summary>Project details</summary><div class="detail-copy"><p>A prototype with Receptionist, Nurse, Doctor, and Admin dashboards for patient registration, staff assignment, vitals entry, rule-based risk assessment, and activity logs. The standalone demo uses fictional data stored in the visitor’s browser. Continuous monitoring and time-based alerts remain planned features.</p><dl><dt>Tools & skills</dt><dd>Flutter, Dart, Node.js, Express, MongoDB, and rule-based risk assessment. The standalone web demo uses browser-local storage with fictional data.</dd><dt>Contribution & learning</dt><dd>I contributed to designing the Reception, Nurse, and Doctor workflows and planning how patient information, monitoring dashboards, and alerts should connect. I learned about role-based interface design and communicating abnormal health patterns to healthcare staff. The project remains a prototype; reliable monitoring and alert delivery have not yet been established.</dd><dt>Project access</dt><dd>Live Demo: <a href="https://vitalguardla.netlify.app/" target="_blank" rel="noopener noreferrer">VitalGuard</a><br>GitHub: <a href="https://github.com/Jarvis-Steven/Vital-Guard-Secure" target="_blank" rel="noopener noreferrer">VitalGuard Files</a></dd></dl></div></details></div></article>
+        <article class="project reim"><div class="project-art" aria-hidden="true"><span>03</span><div class="orbit">◎</div><small>REIM</small></div><div class="project-content"><p class="status">Concept</p><h3>REIM</h3><p>A proposed offline environmental monitoring and early-warning system that combines local sensors, LoRa communication, and a gateway to help identify potentially hazardous conditions.</p><details><summary>Project details</summary><div class="detail-copy"><p>REIM’s proposed architecture uses ESP32-S3 sensor nodes to collect rainfall, water-level, soil-moisture, and tilt readings. LoRa communication connects these nodes to a Raspberry Pi gateway for local processing, event storage, and offline mapping. The design includes solar-powered operation, local safety-threshold analysis, and siren or beacon alerts. TinyML is planned to support analysis at the sensor nodes. These are intended capabilities of the design, rather than verified operational features.</p><dl>
+          <dt>Design Tools, Components & Skills</dt><dd>
+            <ul>
+              <li><strong>Microcontroller:</strong> ESP32-S3</li>
+              <li><strong>Environmental sensors:</strong> Rainfall, water-level, soil-moisture, and tilt sensors</li>
+              <li><strong>Communication:</strong> SX1262 LoRa radio and antenna</li>
+              <li><strong>Gateway:</strong> Raspberry Pi with LoRa interface</li>
+              <li><strong>Edge intelligence:</strong> TinyML and local safety-threshold analysis</li>
+              <li><strong>Programming:</strong> C/C++ firmware and Python gateway processing</li>
+              <li><strong>Mapping:</strong> Offline GIS and geospatial visualization</li>
+              <li><strong>Power system:</strong> Solar panel, battery, charge controller, battery protection, and voltage regulator</li>
+              <li><strong>Alerting and data storage:</strong> Local siren/beacon and offline event storage</li>
+            </ul>
+          </dd><dt>Contribution & learning</dt><dd>My contribution focused on developing the system concept and hardware design, selecting proposed components, and planning how sensing, communication, power, and local alerts fit together. Through this work, I explored embedded systems, LoRa networking, offline data processing, and the practical requirements of environmental monitoring.</dd><dt>Project access</dt><dd>Hardware Design: <a href="https://reim-hardware.netlify.app/" target="_blank" rel="noopener noreferrer">REIM Design</a><br>GitHub: <a href="https://github.com/Jarvis-Steven/REIM" target="_blank" rel="noopener noreferrer">REIM Design Files</a></dd></dl></div></details></div></article>
+      </div>
+    </section>
+    <section id="contact" class="section contact reveal">
+      <p class="eyebrow">04 / Get in touch</p>
+
+      <h2>Let’s start<br>a conversation<span>.</span></h2>
+
+      <p>Interested in my work or learning journey?</p>
+
+    <div class="contact-links">
+      <a class="contact-button contact-button-primary"href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jarvissteven413%40gmail.com" target="_blank" rel="noopener noreferrer">
+        Email <span aria-hidden="true">↗</span>
+      </a>
+
+      <a class="contact-button" href="https://github.com/Jarvis-Steven" target="_blank" rel="noopener noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+
+      <a class="contact-button" href="https://www.linkedin.com/in/jarvis-steven/" target="_blank" rel="noopener noreferrer">
+        LinkedIn <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+  <p class="note">
+    Links open in a new tab. Email opens Gmail with my address filled in.
+  </p>
+</section>
+  </main>
+  <footer><p>© <span id="year">2026</span> Jarvis Steven J</p><a href="#home">Back to top ↑</a></footer>
+  <a class="back-top" href="#home" aria-label="Back to top" hidden>↑</a>
+</body>
+</html>
