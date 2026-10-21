@@ -3,7 +3,7 @@ const root = document.documentElement;
 const themeButton = document.querySelector('.theme-toggle');
 const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
 let preferredTheme = null;
-try { preferredTheme = localStorage.getItem('portfolio-theme'); } catch { /* Storage may be unavailable for local files. */ }
+try { preferredTheme = localStorage.getItem('portfolio-theme'); } catch {}
 function setTheme(theme) {
   root.dataset.theme = theme;
   themeButton.setAttribute('aria-pressed', String(theme === 'dark'));
@@ -14,7 +14,7 @@ themeButton.hidden = false;
 themeButton.addEventListener('click', () => {
   preferredTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
   setTheme(preferredTheme);
-  try { localStorage.setItem('portfolio-theme', preferredTheme); } catch { /* Theme still works without persistence. */ }
+  try { localStorage.setItem('portfolio-theme', preferredTheme); } catch {}
 });
 systemTheme.addEventListener('change', event => { if (!preferredTheme) setTheme(event.matches ? 'dark' : 'light'); });
 
