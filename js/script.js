@@ -106,12 +106,12 @@ document.querySelector('.project-toolbar').hidden = false;
 projectCount.hidden = false;
 filterProjects('all');
 
-// Recalculate after expanding content, filtering, image load, or window resize.
+
 if ('ResizeObserver' in window) {
   new ResizeObserver(() => requestAnimationFrame(updateScroll)).observe(document.body);
 }
 
-// One-time typewriter reveal. Full text remains available to screen readers.
+
 const typingMotion = matchMedia('(prefers-reduced-motion: reduce)');
 document.querySelectorAll('[data-typewriter]').forEach(block => {
   if (typingMotion.matches) return;

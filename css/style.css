@@ -62,7 +62,7 @@
 .detail-copy dd li + li {
   margin-top: 8px;
 }
-/* Dynamic enhancements: circular portrait, project controls and feedback. */
+
 .portrait { width: 100%; max-width: 440px; justify-self: center; padding-bottom: 34px; }
 .portrait img {
   display: block;
@@ -100,13 +100,12 @@
 }
 @media (max-width: 540px) { .portrait { max-width: 320px; } }
 
-/* Typewriter text reserves its final space to prevent layout jumps. */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 .hero h1 .typing-visual, .hero h1 .typing-char { color: inherit; }
 .hero h1 .typing-accent, .hero h1 .typing-accent .typing-char { color: var(--accent); }
 .typing-char.is-pending { visibility: hidden; }
 .typing-char.is-cursor { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: .12em; }
-/* A native link covers the card; details stay above it and remain independent. */
+
 .project { position: relative; }
 .project-demo { display: inline-block; font-size: 13px; font-weight: 700; color: var(--accent); margin-bottom: 8px; }
 .project-demo::after { content: ""; position: absolute; inset: 0; z-index: 1; cursor: pointer; }
